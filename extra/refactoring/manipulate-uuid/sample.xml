@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model schematypens="http://www.w3.org/2001/XMLSchema" title="OSCAL complete schema" href="https://raw.githubusercontent.com/usnistgov/OSCAL/v1.0.4/xml/schema/oscal_complete_schema.xsd" ?>
+<system-security-plan xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="8484e065-dc27-4c93-8f11-bcc9b33828fb">
+    <metadata>
+        <title />
+        <last-modified>2023-02-25T20:22:45Z</last-modified>
+        <version>…</version>
+        <oscal-version>1.0.4</oscal-version>
+    </metadata>
+    <import-profile href="/dev/null" />
+    <system-characteristics>
+        <system-id>…</system-id>
+        <system-name>…</system-name>
+        <description />
+        <security-sensitivity-level>elevated</security-sensitivity-level>
+        <system-information>
+            <information-type>
+                <title />
+                <description />
+                <confidentiality-impact>
+                    <base>…</base>
+                </confidentiality-impact>
+                <integrity-impact>
+                    <base>…</base>
+                </integrity-impact>
+                <availability-impact>
+                    <base>…</base>
+                </availability-impact>
+            </information-type>
+        </system-information>
+        <security-impact-level>
+            <security-objective-confidentiality>…</security-objective-confidentiality>
+            <security-objective-integrity>…</security-objective-integrity>
+            <security-objective-availability>…</security-objective-availability>
+        </security-impact-level>
+        <status state="…" />
+        <authorization-boundary>
+            <description />
+        </authorization-boundary>
+    </system-characteristics>
+    <system-implementation>
+        <user uuid="92d0a6a7-320c-405e-b753-4450f812a72f" />
+        <component uuid="fa3f38b4-d45e-4ca6-95ef-ef6b38a4564c" type="this-system">
+            <title>The MacGyver component.</title>
+            <description />
+            <status state="present" />
+        </component>
+    </system-implementation>
+    <control-implementation>
+        <description />
+        <implemented-requirement uuid="67085006-1285-466a-9033-cff9dd587a7c" control-id="…">
+            <statement statement-id="…" uuid="26785fb6-6caf-4800-9e92-a8864da2d829" />
+        </implemented-requirement>
+    </control-implementation>
+</system-security-plan>

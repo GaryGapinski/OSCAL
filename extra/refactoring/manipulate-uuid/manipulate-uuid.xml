@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refactoringOperationDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.oxygenxml.com/ns/xmlRefactoring" id="uuid"
+    name="Manipulate UUID attributes">
+    <description>Perform shady operations on UUID attributes.</description>
+    <script type="XSLT" href="manipulate-uuid.xsl" />
+    <category>OSCAL</category>
+    <parameters>
+        <description>Has a single parameter. By default all uuid attributes will be replaced with a random v4 UUID.</description>
+        <parameter type="TEXT" name="method" label="Replacement method" optional="true">
+            <description>UUID replacement method.</description>
+            <possibleValues onlyPossibleValuesAllowed="true">
+                <value name="random-v4" default="true">Random v4 UUID</value>
+                <value name="dummy">Dummy v4 UUID (00000000-0000-4000-8000-000000000000)</value>
+                <value name="zeroes">All-zeroes (syntactically invalid) UUID</value>
+            </possibleValues>
+        </parameter>
+    </parameters>
+</refactoringOperationDescriptor>
