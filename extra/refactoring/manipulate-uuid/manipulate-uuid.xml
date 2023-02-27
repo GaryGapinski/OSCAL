@@ -10,6 +10,7 @@
             <description>UUID replacement method.</description>
             <possibleValues onlyPossibleValuesAllowed="true">
                 <value name="random-v4" default="true">Random v4 UUID</value>
+                <value name="remove">Make all uuid attributes an empty string</value>
                 <value name="dummy">Dummy v4 UUID (00000000-0000-4000-8000-000000000000)</value>
                 <value name="zeroes">All-zeroes (syntactically invalid) UUID</value>
             </possibleValues>

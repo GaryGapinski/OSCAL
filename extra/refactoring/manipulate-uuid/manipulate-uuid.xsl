@@ -35,6 +35,10 @@
                 </xsl:attribute>
             </xsl:when>
 
+            <xsl:when test="$method eq 'remove'">
+                <xsl:attribute name="uuid" />
+            </xsl:when>
+
             <xsl:otherwise>
                 <xsl:copy-of select="current()" />
             </xsl:otherwise>
