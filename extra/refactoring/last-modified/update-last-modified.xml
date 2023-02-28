@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refactoringOperationDescriptor xmlns="http://www.oxygenxml.com/ns/xmlRefactoring"
+    id="update-last-modified" name="Update last-modified metadata element">
+    <description>Update last-modified element with current-dateTime() in ISO8601 format.</description>
+    <script type="XSLT" href="update-last-modified.xsl" />
+    <category>OSCAL</category>
+</refactoringOperationDescriptor>
